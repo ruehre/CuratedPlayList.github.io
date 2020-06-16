@@ -7,9 +7,11 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ### Markdown
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-<body>
-    <h1>Hello World!</h1>
-  </body>
+ <a href="#demo" data-toggle="collapse">Collapsible</a>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+</div> 
   
 ```markdown
 Syntax highlighted code block
