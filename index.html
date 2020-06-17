@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <style>
     div.maincontent {
   font-size: 1.0em;
@@ -37,7 +41,9 @@ div.navbar a:hover {
   background: #ddd;
   color: black;
 }
-   
+    div.container {
+        position: relative; top: -225px;
+    }
 </style>
 <html>
      <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -52,39 +58,50 @@ div.navbar a:hover {
          <a href="#link2">Timeline</a>
         <a> Currently Viewing: Timeline</a>
     </div>
-    
-    <section class="section1">
-    <img src="Maison_Jazz_Band.JPG" alt="band">
-    <div class="maincontent">
-        
-     <p class="text">Songs & Info 
-         <br>
-         <br>
-         Song 1
-         <br>
-         <br>
-         Song 2
-         <br>
-         <br>
-         Song 3
-         <br>
-         <br>
-         Song 4
-         <br>
-         <br>
-         Song 5
-         <br>
-         <br>
-         Song 6
-         <br>
-         <br>
-         Song 7
-         <br>
-         <br>
-         Song 8
-        </p>
+    <img src="Maison_Jazz_Band.jpg" alt="band">
+    <div class="container">
+  <div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">90s Songs</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse in">
+        <div class="panel-body"><p> 
+            Bob Dylan - Times They Are A- Changin (1964) <br>
+            Labelle - Lady Marmalade (1974) <br>
+            Sir-Mix-A-Lot - Baby Got Back (1992) <br>
+            </p></div>
+      </div>
     </div>
-    </section>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">2000s Songs</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <div class="panel-body">
+            <p>
+            System Of a Fown - Prison Song (2001) <br>
+            Jay-Z - American Gangster (2007) <br>
+            Macklemore & Ryan Lewis - Same Love (2012) <br>
+            A Tribe Called Quest - The Space Program (2016) <br>
+            Grandson - War (2017) <br>
+            Brockhampton - Junky (2017) <br>
+            Childish Gambino - this is america (2018) <br>
+            Grandson - 6:00 (2018) <br>
+            Grandson - Thoughts and Prayers (2018) <br>
+            Zolita - Fight Like A Girl (2019) <br>
+            Trey Songz - 2020 Riots: How Many Times (2020) <br>
+            YG - FTP (2020) <br>
+            </p></div>
+      </div>
+    </div>
+  </div> 
+</div>     
+  
      
    
 </body>
